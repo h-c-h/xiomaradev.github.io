@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="xiomara2.css">
+    <title>Xiomaravega</title>
+</head>
+<body>
+  
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-8">
+
+              
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+<div><model-viewer src="index.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1">
+    <div class="progress-bar hide" slot="progress-bar">
+        <div class="update-bar"></div>
+    </div>
+    <button slot="ar-button" id="ar-button">
+        View in your space
+    </button></div>
+
+                <!-- blog entry -->
+                <div class="title-container">         
+                <h1><a>IMPRESIÓN 3D – MOTOR DE DOS CILINDROS </a>
+                </h1>
+                <p class="lead">By Briney Xiomara Vega Zavaleta</a>
+                </p>
+                </div>   
+                <hr>
+                                              
+              <h3><b>1. Diseño del Motor de 2 Cilindros en Autodesk Inventor</b></h3> 
+              <p><b>Paso 1: Crear Caja de dos Cilindros de Motor </b></p> 
+                <p><b>A.	Crear el Bloque Base del Motor</b></p> 
+                <p>1.	<b>Abrir Autodesk Inventor:</b></p>
+                <p>
+                  <ul>
+                    <li>Inicia Autodesk Inventor y selecciona "Nuevo" y luego "Archivo de pieza" (Part).</li>
+                    <li>Establece las unidades de medida (milímetros o pulgadas, según el sistema que prefieras).</li>
+                  </ul>
+                </p>
+                <p>2.	<b>Dibuja un Rectángulo:</b></p>
+                <p>
+                  <ul>
+                    <li>En la vista superior, selecciona la herramienta <b>Rectangle</b> para crear el contorno base.</li>
+                    <li><b>Dimensiones:</b> 253.870 mm (longitud) x 228.5 mm (ancho).</li>
+                  </ul>
+                </p>
+                <p>3.	<b>Extrusión:</b></p>
+                <p>
+                  <ul>
+                    <li>Después de dibujar el rectángulo, usa la herramienta <b>Extrude</b> para darle altura al bloque base.</li>
+                    <li><b>Altura:</b> 210 mm, como se indica en las dimensiones.</li>
+                  </ul>
+                </p>
+                
+                <img src="image.png"> <img src="image copy.png">
+                <p><b>B.	Crear los Cilindros</b></p>
+                <p>1.	<b>Crear el Primer Cilindro:</b></p>
+                <p>
+                  <ul>
+                    <li>En la cara superior del bloque, crea un círculo usando la herramienta <b>Circle.</b></li>
+                    <li><b>Diámetro:</b> 80 mm.</li>
+                    <li>Coloca el círculo centrado en el bloque, a una distancia de 89.11 mm (según el dibujo).</li>
+                    <li>Usa <b>Extrude</b> para darle altura al cilindro. En este caso, la altura será de 210 mm (similar a la altura del bloque base).</li>
+                    <li>Esto formará el primer cilindro dentro del bloque.</li>
+                  </ul>
+                </p>
+                <p>2.	<b>Crear el Segundo Cilindro:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja un círculo en la cara superior del bloque, similar al primer cilindro.</li>
+                    <li><b>Distancia entre cilindros:</b> Usa la herramienta de restricción <b>Distance</b> para colocar el segundo cilindro a una distancia de 96.38 mm (de acuerdo a las dimensiones de la vista superior en las imágenes).</li>
+                    <li><b>Diámetro:</b> 80 mm.</li>
+                    <li><b>Extrusión:</b> Igual que el primer cilindro, usa <b>Extrude</b> para darle altura.</li>
+                  </ul>
+                </p>
+
+                <p>3.	<b>Posicionamiento de los Cilindros:</b></p>
+                <p>
+                  <ul>
+                    <li>Asegúrate de que ambos cilindros estén correctamente alineados y centrados en la base utilizando <b>Constraints</b> (restricciones).</li>
+                  </ul>
+                </p>
+                <img src="image2.png"> <img src="image3.png">
+                
+                <p><b>C.	Crear los Pasajes Internos</b></p>
+                <p>1.	<b>Crear Pasajes de Refrigeración:</b></p>
+                <p>
+                  <ul>
+                    <li>Si es necesario, puedes crear pasajes de refrigeración o de combustible dentro del bloque de cilindros.</li>
+                    <li>Usa la herramienta <b>Extrude Cut</b> para hacer cortes en las paredes de los cilindros o en la base del motor, de acuerdo con el diseño.</li>                   
+                  </ul>
+                </p>
+                <p>2.	<b>Agujeros de Fijación:</b></p>
+                <p>
+                  <ul>
+                    <li>En el lado del bloque de cilindros, utiliza la herramienta <b>Hole</b> para crear los agujeros de fijación para el montaje del motor. Los agujeros deben tener las dimensiones de 8 mm de diámetro.</li>
+                  </ul>
+                </p>
+
+                <p>3.	<b>Guardar el archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Guarda el archivo como <b>Bloque_Base.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image4.png">
+                  <hr>
+
+                <p><b>Paso 2: Crear el Pistón</b></p>
+                <p>1.	<b>Modelado del Pistón:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja un círculo en el plano de la sección transversal del cilindro.</li>
+                    <li><b>Diámetro del pistón:</b> 80 mm (para que encaje en el cilindro).</li>
+                    <li><b>Altura del pistón:</b> 53 mm (según las especificaciones del pistón).</li>
+                  </ul>
+                </p>
+                <p>2.	<b>Crear el Canal del Bulón:</b></p>
+                <p>
+                  <ul>
+                    <li>En el pistón, usa la herramienta <b>Hole</b> para crear el agujero para el bulón.</li>
+                    <li><b>Diámetro del agujero:</b> 19 mm (según las especificaciones del bulón y el anillo de compresión).</li>
+                    <li><b>Posición del agujero:</b> Asegúrate de colocar el agujero en la parte superior central del pistón.</li>
+                  </ul>
+                </p>
+                <p>3.	<b>Modelar los Anillos de Compresión:</b></p>
+                <p>
+                  <ul>
+                    <li>Crea anillos de compresión utilizando la herramienta Revolve para generar los anillos alrededor del pistón.</li>
+                    <li><b>Anillo de compresión:</b> Colócalo en la parte superior e inferior del pistón, con las dimensiones especificadas de acuerdo con el diseño.</li>
+                  </ul>
+                </p>
+                <p>4.	<b>Guardar el archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Guarda el archivo del pistón como <b>Piston.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image5.png"> <img src="image6.png">
+                <hr>
+
+
+                <p><b>Paso 3: Crear el Retén del Bulón</b></p>
+                <p>1.	<b>Modelado del Retén:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja un cilindro en el plano de la sección transversal del bulón.</li>
+                    <li><b>Diámetro del retén:</b> 19 mm (según las dimensiones).</li>
+                    <li><b>Longitud:</b> 61 mm.</li>
+                    <li>Utiliza la herramienta <b>Extrude</b> para dar volumen al retén.</li>
+                  </ul>
+                </p>
+                <p>2.	<b>Modelado del Anillo de Compresión:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa la herramienta <b>Extrude</b> y <b>Revolve</b> para crear el anillo de compresión alrededor del pistón, con un grosor de 1.5 mm (según las dimensiones).</li>
+                  </ul>
+                </p>
+                <p>3.	<b>Guardar el archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Guarda el archivo del pistón como <b>Reten.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image7.png"> <img src="image8.png">
+                <hr>
+
+                <p><b>Paso 4: Crear la Biela </b></p>
+                <p>1.	<b>Modelado de la Biela:</b></p>
+                <p>
+                  <ul>
+                    <li>Abre Inventor y selecciona <b>Nuevo</b> y luego <b>Archivo de Pieza (Part).</b></li>
+                    <li>Asegúrate de que las unidades estén en <b>milímetros.</b></li>
+                  </ul>
+                </p>
+                <p>2.	<b>Crear un círculo base (sección transversal):</b></p>
+                <p>
+                  <ul>
+                    <li>Selecciona el <b>Plano de trabajo</b> (X-Y) y usa la herramienta <b>Circle</b> para dibujar el contorno de la biela.</li>
+                    <li><b>Diámetro:</b> 10 mm (según las medidas de la biela en las imágenes).</li>
+                  </ul>
+                </p>
+
+                <p>3.	<b>Extrusión de la base de la biela:</b></p>
+                <p>
+                  <ul>
+                    <li>Después de crear el círculo, selecciona la herramienta <b>Extrude</b> para darle volumen a la pieza.</li>
+                    <li><b>Altura de la biela:</b> 135 mm (según las medidas proporcionadas).</li>
+                    <li>Asegúrate de que la biela tenga la forma básica y plana.</li>
+                  </ul>
+                </p>
+
+                <p>4.	<b>Crear los detalles (huecos y agujeros):</b></p>
+                <p>
+                  <ul>
+                    <li>En el extremo superior de la biela, crea un círculo con <b>diámetro de 37 mm.</b> Esto representará el agujero para el bulón.</li>
+                    <li>Utiliza <b>Extrude Cut</b> para hacer un corte y formar el agujero de la biela.</li>
+                    <li>Luego, utiliza <b>Fillet</b> para redondear los bordes de la biela con un <b>radio de 10 mm.</b></li>
+                    <li>En el otro extremo de la biela, repite el mismo proceso para crear otro agujero para el pasador, usando un <b>diámetro de 37 mm.</b></li>
+                  </ul>
+                </p>
+
+                <p>5.	<b>Fillet (redondeo) en los bordes:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa <b>Fillet</b> con <b>radio de 20 mm</b> para redondear las esquinas laterales de la biela para darle un acabado más suave.</li>
+                  </ul>
+                </p>
+
+                <p>6.	<b>Guardar archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Guarda el archivo con el nombre <b>Biela.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image9.png"> <img src="image10.png">
+                <hr>
+
+                  <p><b>Paso 5: Crear Tapa de la Biela </b></p>
+                <p>1.	<b>Modelado de la Tapa Biela:</b></p>
+                <p>
+                  <ul>
+                    <li>Inicia un nuevo archivo de pieza en Inventor y selecciona el plano adecuado (X-Y).</li>
+                    <li>Usa la herramienta <b>Circle</b> para dibujar un círculo con un diámetro de <b>45 mm</b> en la sección de la tapa de la biela.</li>
+                  </ul>
+                </p>
+                <p>2.	<b>Extrusión de la tapa:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa la herramienta <b>Extrude</b> para darle <b>16 mm</b> de altura a la tapa de la biela (según las especificaciones).</li>
+                  </ul>
+                </p>
+                <p>3.	<b>Corte interior para el pasador:</b></p>
+                <p>
+                  <ul>
+                    <li>En la parte central de la tapa de la biela, dibuja un círculo con <b>diámetro de 27.5 mm</b> para el agujero de ajuste.</li>
+                    <li>Usa <b>Extrude Cut</b> para crear este agujero en la tapa.</li>
+                  </ul>
+                </p>
+                <p>4.	<b>Crear los agujeros para los tornillos de fijación:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja los agujeros necesarios para los tornillos con la herramienta <b>Hole</b>, especificando el diámetro y la ubicación correcta, según los dibujos de la tapa de la biela.</li>
+                  </ul>
+                </p>
+                <p>5.	<b>Fillet para los bordes:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa la herramienta <b>Fillet</b> para añadir radios <b>0.5 mm</b> a los bordes de la tapa de la biela.</li>
+                  </ul>
+                </p>
+                <p>6.	<b>Guardar archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Guarda este archivo como <b>Tapa_Biela.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image11.png"> <img src="image12.png">
+                <hr>
+
+                <p><b>Paso 6: Crear Cojinete</b></p>
+                <p>1.	<b>Modelado del Cojinete:</b></p>
+                <p>
+                  <ul>
+                    <li>Crea un nuevo archivo de pieza en Inventor y selecciona el plano de trabajo.</li>
+                    <li>Dibuja un círculo de <b>diámetro 45 mm.</b></li>
+                  </ul>
+                </p>
+                <p>2.	<b>Extrusión del cojinete:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa la herramienta <b>Extrude</b> para darle una altura de 18 mm al cojinete.</li>
+                  </ul>
+                </p>
+                <p>3.	<b>Agujero central:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja un círculo con <b>diámetro de 42 mm</b> en el centro de la base del cojinete.</li>
+                    <li>Utiliza <b>Extrude Cut</b> para perforar el agujero en la pieza.</li>
+                  </ul>
+                </p>
+                <p>4.	<b>Guardar archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Guarda el archivo como <b>Cojinete.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image13.png">
+                <hr>  
+
+                <p><b>Paso 7: Crear Cojinete</b></p>
+                <p>1.	<b>Modelado del Cigüeñal:</b></p>
+                <p>
+                  <ul>
+                    <li><b>Abre Autodesk Inventor</b> y selecciona <b>Nuevo</b> > <b>Archivo de Pieza (Part)</b>.</li>
+                    <li>Asegúrate de que las unidades estén configuradas en <b>milímetros.</b></li>
+                  </ul>
+                </p>
+
+                <p>2.	<b>Dibuja la Forma Básica del Cigüeñal:</b></p>
+                <p>
+                  <ul>
+                    <li><b>Círculo Base:</b>
+                      <ul>
+                        <li>Dibuja un círculo con <b>Ø55 mm</b> en el <b>plano X-Y</b> (según el dibujo).</li>
+                        <li>Usa la herramienta <b>Extrude</b> para darle <b>54 mm</b> de longitud a esta primera sección del cigüeñal (tal como aparece en la vista lateral).</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+                <p>3.	<b>Crear el Primer Redondeo (R22):</b></p>
+                <p>
+                  <ul>
+                    <li><b>Fillet:</b>
+                      <ul>
+                        <li>Selecciona los bordes del cilindro que acabas de crear y usa la herramienta <b>Fillet</b> para aplicar un radio de <b>R22</b> en la parte superior de la sección.</li>
+                        <li>Esto dará la forma redondeada en la transición hacia la siguiente sección del cigüeñal.</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </p>
+                <p>4.	<b>Crear la Parte Intermedia :</b></p>
+                <p>
+                  <ul>
+                    <li><b>Diámetro de la Sección Intermedia:</b></li>
+                      <ul>
+                        <li>En el plano lateral, observa que el cigüeñal tiene diferentes diámetros. Dibuja un nuevo círculo con <b>Ø42 mm</b> (según las especificaciones del dibujo).</li>
+                      </ul>
+                    <li><b>Extrusión:</b></li>
+                      <ul>
+                        <li>Usa la herramienta <b>Extrude</b> para darle una longitud de <b>19 mm</b> (como se muestra en el dibujo). Esto formará la sección del cigüeñal de diámetro <b>Ø42 mm.</b></li>
+                      </ul>
+                  </ul>
+                </p>
+
+                <p>5.	<b>Crear los Contrapesos y Secciones del Cigüeñal:</b></p>
+                <p>
+                  <ul>
+                    <li><b>Redondeo (R10):</b></li>
+                      <ul>
+                        <li>En las zonas donde se producen cambios en el diámetro, como en los contrapesos, usa <b>Fillet</b> con un radio de <b>R10</b> para suavizar las transiciones.</li>
+                      </ul>
+                    <li><b>Diámetro de la Sección Final:</b></li>
+                      <ul>
+                        <li>Crea otro círculo de <b>Ø57 mm</b> para la sección final del cigüeñal, ubicada en la parte más cercana al extremo del cigüeñal (según las vistas y las medidas).</li>
+                      </ul>
+                    <li><b>Extrusión:</b></li>
+                      <ul>
+                        <li>Usa <b>Extrude</b> para darle <b>38.40 mm</b> de longitud a esta última parte del cigüeñal.</li>
+                      </ul>
+                  </ul>
+                </p>
+
+                <p>6.	<b>Crear los Agujeros para los Tornillos:</b></p>
+                <p>
+                  <ul>
+                    <li><b>Agujeros para Fijación:</b></li>
+                      <ul>
+                        <li>En las secciones indicadas para los agujeros (tal como se muestra en la vista inferior), utiliza la herramienta <b>Hole</b> para crear <b>6 agujeros con diámetro de 8 mm</b> en la parte final del cigüeñal.</li>
+                        <li>Coloca los agujeros en las posiciones mostradas en el dibujo.</li>
+                      </ul>
+                  </ul>
+                </p>
+                <p>7.	<b>Crear la Sección Transversal (Section R-R):</b></p>
+                <p>
+                  <ul>
+                    <li><b>Corte de la Sección:</b></li>
+                      <ul>
+                        <li>Usa <b>Section View</b> para crear la sección transversal del cigüeñal (sección R-R).</li>
+                        <li>Asegúrate de que el corte sea preciso y que coincida con las especificaciones del dibujo, como los diámetros y los radios de curvatura.</li>
+                      </ul>
+                  </ul>
+                </p>
+                <p>8.	<b>Fillet Adicional en las Secciones:</b></p>
+                <p>
+                  <ul>
+                    <li><b>Aplicar Fillet en las Esquinas:</b></li>
+                      <ul>
+                        <li>Aplica un radio <b>R22</b> en las secciones que lo requieren, como en la parte más baja de la sección transversal.</li>
+                      </ul>
+                  </ul>
+                </p>
+                <p>9.	<b>Guardar el Archivo:</b></p>
+                <p>
+                  <ul>
+                    <li><b>Guardar:</b></li>
+                      <ul>
+                        <li>Una vez terminado el modelado, guarda el archivo con un nombre apropiado, como <b>Cigueñal.ipt.</b></li>
+                      </ul>
+                  </ul>
+                </p>
+                <img src="image14.png">
+                <hr>
+
+                <p><b>Paso 8: Crear el Retenedor </b></p>
+                <p><b>Modelo A:</b></p>
+                <p>1.	<b>Modelado para el retenedor:</b></p>
+                <p>
+                  <ul>
+                    <li>Crea un nuevo archivo de pieza y selecciona el plano adecuado.</li>
+                    <li>Usa la herramienta <b>Circle</b> para crear un círculo con <b>diámetro de 26.11 mm</b> (en la vista inferior de la imagen).</li>
+                  </ul>
+                </p>
+                <p>2.	<b>Extrusión del retenedor:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa la herramienta <b>Extrude</b> para darle una altura de <b>20 mm</b> al retenedor.</li>
+                  </ul>
+                </p>
+                <p>3.	<b>Forma de la pieza:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja el perfil lateral de la pieza en el <b>Plano de trabajo.</b></li>
+                    <li>Asegúrate de que la <b>longitud</b> sea <b>122 mm</b> y la <b>altura de 47.53 mm</b> según las dimensiones proporcionadas en el dibujo.</li>
+                    <li>Usa la herramienta <b>Extrude</b> para darle volumen a la pieza. Asegúrate de que la extrusión tenga una altura de <b>40 mm</b> (como indica la vista lateral de la pieza).</li>
+                  </ul>
+                </p>
+                <p>4.	<b>Crear la Forma Principal de la Pieza:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja el perfil lateral de la pieza en el <b>Plano de trabajo.</b></li>
+                    <li>Asegúrate de que la <b>longitud</b> sea <b>122 mm</b> y la <b>altura</b> de <b>47.53 mm</b> según las dimensiones proporcionadas en el dibujo.</li>
+                    <li>Usa la herramienta <b>Extrude</b> para darle volumen a la pieza. Asegúrate de que la extrusión tenga una altura de <b>40 mm</b> (como indica la vista lateral de la pieza).</li>
+                  </ul>
+                </p>
+                <p>5.	<b>Realizar el Corte de la Cavidad Interna:</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja un círculo en el centro de la parte superior de la pieza, con <b>diámetro de 26.11 mm</b> (tal como se muestra en la parte inferior de la pieza).</li>
+                    <li>Utiliza <b>Extrude Cut</b> para cortar este círculo a través de la pieza, creando una cavidad interna.</li>
+                  </ul>
+                </p>
+                <p>6.	<b>Crear los Agujeros para Tornillos:</b></p>
+                <p>
+                  <ul>
+                    <li>En la parte inferior de la pieza, dibuja dos círculos con <b>diámetro de 8 mm</b> para los agujeros de fijación.</li>
+                    <li>Utiliza la herramienta <b>Hole</b> para crear los agujeros en las posiciones indicadas.</li>
+                  </ul>
+                </p>
+                <p>7.	<b>Aplicar Radios en las Esquinas:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa la herramienta <b>Fillet</b> para redondear las esquinas de la pieza, utilizando <b>R26</b> en la parte superior y <b>R12</b> en la parte inferior, tal como se indica en las vistas.</li>
+                  </ul>
+                </p>
+                <p>8.	<b>Guardar archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Guarda el archivo con un nombre apropiado, como <b>Retenedor_A.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image15.png"> <img src="image16.png">
+
+                <p><b>Modelo B:</b></p>
+                <p>1.	<b>Modelado del Retenedor:</b></p>
+                <p>
+                  <ul>
+                    <li>En el plano <b>X-Y</b>, usa la herramienta <b>Circle</b> para dibujar un círculo con <b>diámetro de 38.38 mm</b> (según las dimensiones proporcionadas en la imagen).</li>
+                    <li>Luego, dibuja un círculo con <b>diámetro de 25 mm</b> centrado en el primer círculo para la cavidad interna de la pieza.</li>
+                  </ul>
+                </p>
+                <p>2.	<b>Extrusión de la Pieza:</b></p>
+                <p>
+                  <ul>
+                    <li>Usa la herramienta <b>Extrude</b> para darle volumen a la pieza.</li>
+                    <li><b>Altura de la pieza:</b> 20 mm, que es la distancia especificada en el dibujo.</li>
+                  </ul>
+                </p>
+                <p>3.	<b>Crear la Cavidad Interna (Corte):</b></p>
+                <p>
+                  <ul>
+                    <li>Dibuja un círculo dentro de la pieza, utilizando las mismas dimensiones para el agujero central, <b>Ø25 mm.</b></li>
+                    <li>Usa la herramienta <b>Extrude Cut</b> para crear la cavidad interna a través de la pieza.</li>
+                  </ul>
+                </p>
+                <p>4.	<b>Crear los Agujeros para Tornillos:</b></p>
+                <p>
+                  <ul>
+                    <li>En la parte inferior de la pieza, dibuja dos círculos <b>Ø8 mm</b> para los agujeros de fijación (según la vista lateral).</li>
+                    <li>Utiliza la herramienta <b>Hole</b> para crear los agujeros en las posiciones indicadas.</li>
+                  </ul>
+                </p>
+                <p>5.	<b>Fillet para los Bordes:</b></p>
+                <p>
+                  <ul>
+                    <li>Utiliza la herramienta <b>Fillet</b> para agregar un <b>radio de R26</b> en la parte superior de la pieza y <b>R12</b> en la parte inferior, como se muestra en el dibujo.</li>
+                    <li>Asegúrate de aplicar <b>fillet</b> en las esquinas donde las superficies se encuentran.</li>
+                  </ul>
+                </p>
+                <p>6.	<b>Guardar el Archivo:</b></p>
+                <p>
+                  <ul>
+                    <li>Una vez completado el modelado, guarda el archivo con el nombre <b>RetenedorB.ipt.</b></li>
+                  </ul>
+                </p>
+                <img src="image17.png"> <img src="image18.png">
+                <hr>
+
+                <p><b>2. Preparación para Impresión 3D</b></p>
+                <p><b>Objetivo:</b></p>
+                <p>Preparar el diseño para impresión 3D en el FabLab.</p>
+                <p><b>Pasos:</b></p>
+                <p>
+                  <ol>
+
+                    <li><b>Convertir el Modelo a STL:</b></li>
+                      <ul>
+                        <li>Asegúrate de exportar el diseño a formato STL en Inventor, que es el formato adecuado para la impresión 3D.</li>
+                      </ul>
+
+                    <li><b>Abrir el Archivo en un Software de Impresión 3D (Ej. Bambu lab, Cura):</b></li>
+                      <ul>
+                        <li>Importa el archivo STL a un software de impresión 3D para generar el código G necesario para la impresora 3D.</li>
+                      </ul>
+
+                    <li><b>Ajustes de Impresión:</b></li>
+                      <ul>
+                        <li>Elige el material adecuado, como PLA, y configura la impresora. Define la resolución de la impresión y el soporte para piezas complejas si es necesario.</li>
+                        <li>Asegúrate de elegir los parámetros correctos de capa, velocidad de impresión, y temperatura.</li>
+                      </ul>
+                    <img src="image19.png"> <img src="image20.png">
+                    <p></p>
+                    <img src="image21.png"> <img src="image22.png">
+
+                    <li><b>Verificación de la Impresión:</b></li>
+                    <p>Antes de iniciar la impresión completa, realiza una prueba de impresión de una parte pequeña del motor para verificar que todo esté correcto.</p>
+                    <ul>
+                      <li>Prueba de impresión en escala 100 (Tapa Biela) </li>
+                      <p></p>
+                      <img src="image23.png">
+                      <p></p>
+                      <li>Tapa biela impresa escala 100</li>
+                      <p></p>
+                      <img src="image24.png">
+                      <p></p>
+                      <li>Tapa biela impresa escala 80</li>
+                      <p></p>
+                      <img src="image25.png">
+                      <p></p>
+                    </ul>
+
+                    <li><b>Impresión del Modelo:</b></li>
+                    <p>Imprime cada una de las partes del motor de 2 cilindros en 3D, asegurándote de utilizar el material adecuado y que el proceso de impresión sea estable.</p>
+                    <ul>
+                      <li>Impresión de pistón, biela, tapa biela, bulón</li>
+                      <p></p>
+                      <img src="image26.png"><img src="image27.png">
+                      <p></p>
+                      <li>Impresión caja de cilindros</li>
+                      <p></p>
+                      <img src="image28.png"><img src="image29.png">
+                      <p></p>
+                      <li>Impresión cigüeñal</li>
+                      <p></p>
+                      <img src="image30.png"><img src="image31.png"> <img src="image32.png">
+                      <p></p>
+                      <li>Impresión retenedor</li>
+                      <p></p>
+                      <img src="image33.png"><img src="image34.png">
+                      <p></p>
+                    </ul>
+                    <li><b>Postprocesamiento:</b></li>
+                    <ul>
+                      <li>Después de la impresión, se deben retirar los soportes de las piezas impresas y realizar cualquier acabado superficial necesario, como lijado o pintura.</li>
+                      <p></p>
+                      <img src="image35.png"><img src="image36.png">
+                      <p></p>
+                      <img src="image37.png"><img src="image38.png"><img src="image39.png">
+                      <p></p>
+                    </ul>
+                  </ol>
+                  <p><b>3. Montaje y Evaluación Final</b></p>
+                  <p><b>Objetivo:</b></p>
+                  <p>Evaluar la calidad del motor impreso y verificar que todas las piezas encajen adecuadamente.</p>
+                  <p><b>Pasos:</b></p>
+                  <ol>
+                    <li><b>Montaje del Motor:</b></li>
+                      <ul>
+                        <li>Una vez impresas todas las piezas, realiza el ensamblaje del motor de 2 cilindros.</li>
+                        <li>Verifica que todos los componentes se ensamblen correctamente sin interferencias.</li>
+                        <p></p>
+                        <img src="image40.png"><img src="image41.png">
+                        <p></p>
+                        <img src="image42.png"><img src="image43.png">
+                        <p></p>
+                      </ul>
+                    <li><b>Pruebas de Funcionamiento:</b></li>
+                      <ul>
+                        <li>Si el diseño lo permite, prueba el funcionamiento del motor para verificar la funcionalidad del modelo.</li>
+                        <p></p>
+                        <video src="xiomara.mp4" controls></video>
+                        <p></p>
+                      </ul>
+                    <li><b>Análisis Final:</b></li>
+                      <ul>
+                        <li>Evalúa la precisión de las dimensiones del modelo, el acabado superficial, y la resistencia de las piezas.</li>
+                      </ul>
+                  </ol>
+                </p>
+    </div>
+  </body>
+</html>
